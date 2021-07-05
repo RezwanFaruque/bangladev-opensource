@@ -1,0 +1,44 @@
+.rightsidebar {
+  background-color: #ffff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  .title{
+      font-size: 18px;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bolder;
+      color: black;
+  }
+  a {
+      text-decoration: none;
+    .discussions {
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      cursor: pointer;
+      padding-left: 3px;
+      padding-right: 3px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      &:hover {
+        background-color: #f8f8f2;
+        cursor: pointer;
+        padding-left: 3px;
+        padding-right: 3px;
+      }
+      .title {
+        font-size: 14px;
+        font-weight: bolder;
+        font-family: "Courier New", Courier, monospace;
+        color: black;
+      }
+      .comments {
+        font-size: 12px;
+        font-family: "Courier New", Courier, monospace;
+        color: black;
+      }
+    }
+  }
+}

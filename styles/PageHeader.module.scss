@@ -1,0 +1,37 @@
+.pageheader {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10p;
+  border-bottom: 1px solid black;
+  .title {
+    font-size: 18px;
+    font-weight: 500;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+    color: black;
+  }
+
+  .links {
+    ul {
+      display: flex;
+      li {
+        list-style: none;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        a {
+          font-size: 18px;
+          font-weight: 300;
+          font-family: "Courier New", Courier, monospace;
+          color: black;
+          &:hover {
+            border-bottom: 2px solid rgb(53, 53, 118);
+          }
+        }
+      }
+    }
+  }
+}

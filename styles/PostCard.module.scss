@@ -1,0 +1,120 @@
+.postcard{
+
+    background-color: #f8f8f2;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    .header{
+        display: flex;
+        height: 80px;
+        .left{
+            width: 20%;
+            .image{
+                .imgresponsive{
+                    max-width: 50px!important;
+                    max-height: 50px!important;
+                    border-radius: 50%;
+                }
+            }
+
+        }
+        .right{
+            margin-left: 15px;
+            .name{
+                font-size: 12px;
+                font-family: 'Courier New', Courier, monospace;
+                color: black;
+                
+            }
+            .date{
+                font-size: 11px;
+                font-family: 'Courier New', Courier, monospace;
+                color: rgb(72, 72, 72);
+            }
+        }
+    }
+
+    .body{
+
+        margin-top: 15px;
+        .title{
+            font-size: 22px;
+            font-family: 'Courier New', Courier, monospace;
+            color: black;
+            font-weight: bolder;
+            padding-left: 10px;
+            padding-right: 10px;
+            &:hover{
+                a{
+                    color: rgb(12, 87, 228);
+                }
+            }
+            a{
+                color: black;
+                text-decoration: none;
+            }
+        }
+        .tags{
+            display: flex;
+            span{
+                padding-left: 5px;
+                padding-right: 5px;
+                background-color: rgb(111, 111, 111);
+                margin-left: 5px;
+                margin-right: 5px;
+                text-align: center;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-top: 2px;
+                padding-bottom: 2px;
+                &:hover{
+                    background-color: rgb(41, 50, 67);
+                    
+                    a{
+                        color: white;
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    
+
+                }
+            }
+        }
+
+        .like_comment{
+
+            margin-top: 15px;
+            display: flex;
+            padding-left: 10px;
+            
+
+            .likes{
+                margin-right: 20px;
+            }
+            .comments{
+                margin-left: 20px;
+            }
+            
+           
+        }
+
+    }
+
+    .footer{
+
+        margin-top: 15px;
+        padding-left: 15px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 17px;
+        color: black;
+    }
+}
