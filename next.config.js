@@ -1,6 +1,9 @@
 module.exports = {
-  reactStrictMode: true,
-  script:[
-    {src: "https://kit.fontawesome.com/ba9a91d726.js", crossorigin: "anonymous"},
-  ],
+  
+  env: {
+    MONGODB_URI: "mongodb+srv://bangladev:far3195uk@cluster0.8z7fs.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    MONGODB_DB: "sample_airbnb"
+  
+  }
+  
 }

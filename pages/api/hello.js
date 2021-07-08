@@ -1,5 +1,16 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import { connectToDatabase } from '../../utils/database.js';
 
-export default function handler(req, res) {
-  res.status(200).json({ name: 'John Doe' })
+
+
+export default async function handler(req, res) {
+
+  if(req.method == 'GET'){
+    const {db} = await connectToDatabase();
+
+    const data = await db.collection("listingsAndReviews").find({}).limit(20).toArray();
+  
+    res.json(data);
+  }
+
+
 }
