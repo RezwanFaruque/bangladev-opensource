@@ -54,13 +54,13 @@ const PostCard = () => {
         <div className={pstcard.like_comment}>
           <div className={pstcard.likes}>
             <span>
-              <i class="far fa-heart"></i>
+              <i className="far fa-heart"></i>
             </span>
             234 Likes
           </div>
           <div className={pstcard.comments}>
             <span>
-            <i class="fas fa-comments"></i>
+            <i className="fas fa-comments"></i>
             </span>
             234 comments
           </div>

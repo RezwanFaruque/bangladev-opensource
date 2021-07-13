@@ -1,4 +1,5 @@
 import { Navbar, FormControl, Form, Button, Nav } from "react-bootstrap";
+import Link from 'next/link';
 import navbarstyle from '../styles/Navbar.module.scss';
 
 const NavbarComponent = () => {
@@ -16,8 +17,10 @@ const NavbarComponent = () => {
            <button type="submit" className="btn btn-primary">Search</button>
         </Form>
         <Nav className="ml-auto">
-          <Nav.Link href="#home">Login</Nav.Link>
-          <Nav.Link href="#features">Register</Nav.Link>
+          <Link href="/posts/create"><a className="btn btn-primary">Create Post</a></Link>
+          <Link href="/posts/create"><a className="nav-link">Login</a></Link>
+          <Link href="/posts/create"><a className="nav-link">Register</a></Link>
+          
         </Nav>
       </Navbar>
     </>
