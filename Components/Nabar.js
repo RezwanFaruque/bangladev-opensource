@@ -18,8 +18,8 @@ const NavbarComponent = () => {
         </Form>
         <Nav className="ml-auto">
           <Link href="/posts/create"><a className="btn btn-primary">Create Post</a></Link>
-          <Link href="/posts/create"><a className="nav-link">Login</a></Link>
-          <Link href="/posts/create"><a className="nav-link">Register</a></Link>
+          <Link href="/user/login"><a className="nav-link">Login</a></Link>
+          <Link href="/user/register"><a className="nav-link">Register</a></Link>
           
         </Nav>
       </Navbar>
